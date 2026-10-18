@@ -17,9 +17,10 @@ from siruri2 import (
   numar_total_litere,
   numar_total_litere_cuvinte_lungi,
   formatare_nume,
-  litera_din_mijloc
+  litera_din_mijloc,
+  suma_din_text
 )
 if __name__ == "__main__":
-    print(litera_din_mijloc("Python"))
+    print(suma_din_text("1,2,3,4"))
 
 

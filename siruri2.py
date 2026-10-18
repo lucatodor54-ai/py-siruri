@@ -99,5 +99,28 @@ def litera_din_mijloc(text: str) -> str:
     else:
         return text[mijloc-1:mijloc+1]
 
+def prima_jumatate(text:str) -> str:
+    mijloc = len(text)//2
+    return text[:mijloc]
+
+def a_doua_jumatate(text:str) -> str:
+    mijloc = len(text)//2
+    return text[mijloc:]
+
+def dupa_mijloc(text: str) -> str:
+    mijloc = len(text) // 2
+    if (len(text) % 2) != 0:
+        return text[mijloc+1:]
+    else:
+        return text[mijloc:]
+
+def suma_din_text(text: str) -> int:
+    if text == "":
+        return 0
+    total = 0
+    for bucata in text.split(","):
+        total += int(bucata)
+    return total
+
 
 
