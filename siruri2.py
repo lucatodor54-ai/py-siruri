@@ -92,5 +92,12 @@ def formatare_nume(text: str) -> str:
         rezultat += cuvant.capitalize() + " "
     return rezultat.strip()
 
+def litera_din_mijloc(text: str) -> str:
+    mijloc = len(text)//2
+    if (len(text) % 2) != 0:
+        return text[mijloc]
+    else:
+        return text[mijloc-1:mijloc+1]
+
 
 

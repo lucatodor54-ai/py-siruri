@@ -16,9 +16,10 @@ from siruri2 import (
   cel_mai_lung_cuvant_cu_litera,
   numar_total_litere,
   numar_total_litere_cuvinte_lungi,
-  formatare_nume
+  formatare_nume,
+  litera_din_mijloc
 )
 if __name__ == "__main__":
-    print(formatare_nume("luca TOdOr"))
+    print(litera_din_mijloc("Python"))
 
 
