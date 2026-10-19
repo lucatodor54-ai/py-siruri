@@ -122,5 +122,61 @@ def suma_din_text(text: str) -> int:
         total += int(bucata)
     return total
 
+def numere_mai_mari_de_10(text:str) -> int:
+    if text == "":
+        return 0
+    contor = 0
+    for bucata in text.split(","):
+        bucata = int(bucata)
+        if bucata > 10:
+            contor += 1
+    return contor
+
+
+def suma_numerelor_pare(text: str) -> int:
+    if text == "":
+        return 0
+    total = 0
+    for bucata in text.split(","):
+        bucata = int(bucata)
+        if bucata % 2 == 0:
+            total += bucata
+    return total
+
+def cel_mai_mare_numar(text: str) -> int:
+    if text == "":
+        return 0
+    maxim = 0
+    for bucata in text.split(","):
+        bucata = int(bucata)
+        if bucata > maxim:
+            maxim = bucata
+    return maxim
+
+def cel_mai_mic_numar(text: str) -> int:
+    if text == "":
+        return 0
+    bucati = text.split(",")
+    minim = int(bucati[0])
+    for bucata in bucati:
+        bucata = int(bucata)
+        if bucata < minim:
+            minim = bucata
+    return minim
+
+def parola_buna(parola: str)-> bool:
+    if len(parola) < 8:
+        return False
+    are_cifra = False
+    for litera in parola:
+        if litera in "0123456789":
+            are_cifra = True
+    if are_cifra == True and parola!=parola.lower():
+        return True
+    else:
+        return False
+
+
+
 
 

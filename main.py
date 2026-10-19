@@ -18,9 +18,10 @@ from siruri2 import (
   numar_total_litere_cuvinte_lungi,
   formatare_nume,
   litera_din_mijloc,
-  suma_din_text
+  suma_din_text,
+  parola_buna
 )
 if __name__ == "__main__":
-    print(suma_din_text("1,2,3,4"))
+    print(parola_buna("Python2026"))
 
 
