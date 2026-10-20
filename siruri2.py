@@ -275,6 +275,33 @@ def analiza_salarii(salarii):
             minim = salar
     return maxim, minim, contor, suma_mari
 
+vanzari = {
+    "Laptop": 4500,
+    "Telefon": 2800,
+    "Tableta": 1500,
+    "Monitor": 900,
+    "Casti": 600,
+    "Tastatura": 1200
+}
+
+def analiza_vanzari(vanzari):
+    contor = 0
+    suma_mari = 0
+    maxim = 0
+    produs_maxim = ""
+    for produs, valoare in vanzari.items():
+        if valoare >= 1500:
+            contor += 1
+            suma_mari += valoare
+        if valoare > maxim:
+            maxim = valoare
+            produs_maxim = produs
+    media = suma_mari / contor
+    media = round(media, 2)
+    return produs_maxim, contor, suma_mari, media
+
+
+
 
 
 
