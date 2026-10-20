@@ -27,16 +27,19 @@ from siruri2 import (
   analiza_vanzari,
   analiza_note,
   analiza_cheltuieli,
-  analiza_vanzari1
+  analiza_vanzari1,
+  analiza_produs,
+  analiza_prod
 )
 if __name__ == "__main__":
-  vanzari = {
-    "Alba": [1200, 1800, 900, 2500],
-    "Cluj": [2200, 3100, 1500, 2800],
-    "Sibiu": [800, 1100, 700, 1400]
-  }
+  produse = [
+    ("Laptop", 4500, 2),
+    ("Telefon", 2800, 3),
+    ("Monitor", 1200, 4),
+    ("Tastatura", 500, 5)
+  ]
 
-  rezultat = analiza_vanzari1(vanzari)
+  rezultat = analiza_prod(produse)
   print(rezultat)
 
 

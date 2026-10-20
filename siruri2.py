@@ -377,6 +377,34 @@ def analiza_vanzari1(vanzari):
 
     return nume_maxim, maxim, suma, contor
 
+produs = ("Laptop", 4500, 3)
+def analiza_produs(produs):
+    nume, pret, cantitate = produs
+    valoarea_totala = pret * cantitate
+    return nume,pret,cantitate, valoarea_totala
+
+produse = [
+    ("Laptop", 4500, 2),
+    ("Telefon", 2800, 3),
+    ("Monitor", 1200, 4),
+    ("Tastatura", 500, 5)
+]
+def analiza_prod(produse):
+    contor = 0
+    suma_totala = 0
+    produs_max = 0
+    numele_produsului_max = ""
+    for nume, pret, cantitate in produse:
+        suma_totala += pret * cantitate
+        if pret >= 2000:
+            contor += 1
+        if pret > produs_max:
+            produs_max = pret
+            numele_produsului_max = nume
+    return numele_produsului_max, produs_max, suma_totala, contor
+
+
+
 
 
 
