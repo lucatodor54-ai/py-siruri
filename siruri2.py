@@ -352,6 +352,33 @@ def analiza_cheltuieli(cheltuieli):
     media = round(media, 2)
     return categoria_maxima, cea_mai_mare, contor, suma_mari, media
 
+vanzari = {
+    "Alba": [1200, 1800, 900, 2500],
+    "Cluj": [2200, 3100, 1500, 2800],
+    "Sibiu": [800, 1100, 700, 1400]
+}
+
+def analiza_vanzari1(vanzari):
+    contor = 0
+    suma = 0
+    maxim = 0
+    nume_maxim = ""
+    for magazin, lista in vanzari.items():
+        total_magazin = 0
+        for vanzare in lista:
+            suma += vanzare
+            total_magazin += vanzare
+            if vanzare >= 2000:
+                contor += 1
+
+        if total_magazin > maxim:
+            maxim = total_magazin
+            nume_maxim = magazin
+
+    return nume_maxim, maxim, suma, contor
+
+
+
 
 
 

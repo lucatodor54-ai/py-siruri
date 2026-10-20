@@ -26,19 +26,17 @@ from siruri2 import (
   analiza_salarii,
   analiza_vanzari,
   analiza_note,
-  analiza_cheltuieli
+  analiza_cheltuieli,
+  analiza_vanzari1
 )
 if __name__ == "__main__":
-  cheltuieli = {
-    "Mancare": 1850,
-    "Transport": 650,
-    "Haine": 1200,
-    "Facturi": 950,
-    "Divertisment": 500,
-    "Facultate": 1400
+  vanzari = {
+    "Alba": [1200, 1800, 900, 2500],
+    "Cluj": [2200, 3100, 1500, 2800],
+    "Sibiu": [800, 1100, 700, 1400]
   }
 
-  rezultat = analiza_cheltuieli(cheltuieli)
+  rezultat = analiza_vanzari1(vanzari)
   print(rezultat)
 
 
