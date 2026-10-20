@@ -20,9 +20,10 @@ from siruri2 import (
   litera_din_mijloc,
   suma_din_text,
   parola_buna,
-  email_valid
+  email_valid,
+  cod_acces_valid
 )
 if __name__ == "__main__":
-    print(email_valid("luca.todor1@gmail.com"))
+    print(cod_acces_valid(""))
 
 

@@ -216,6 +216,35 @@ def email_valid(email:str)->bool:
     else:
         return False
 
+##Codul este valid dacă:
+##- are exact 10 caractere
+##- conține cel puțin 2 cifre
+##- conține cel puțin o literă mare
+##- conține cel puțin o literă mică
+##- nu conține spații
+
+def cod_acces_valid(cod: str)->bool:
+    if len(cod) != 10:
+        return False
+    contor = 0
+    litera_mare = False
+    litera_mica = False
+
+    for litera in cod:
+        if litera in "0123456789":
+            contor += 1
+        if litera in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
+            litera_mare = True
+        if litera in "abcdefghijklmnopqrstuvwxyz":
+            litera_mica = True
+    if contor >= 2 and litera_mare == True and litera_mica == True and " " not in cod:
+        return True
+    else:
+        return False
+
+
+
+
 
 
 
