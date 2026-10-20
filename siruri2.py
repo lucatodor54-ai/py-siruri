@@ -1,3 +1,4 @@
+
 def prezentare(nume: str, varsta: int) -> str:
     nume=nume[0].upper()+nume[1:].lower()
     return f"{nume} are {varsta}"
@@ -403,7 +404,14 @@ def analiza_prod(produse):
             numele_produsului_max = nume
     return numele_produsului_max, produs_max, suma_totala, contor
 
-
+def fara_dubluri(text: str) -> str:
+    if text == "":
+        return ""
+    rezultat = text[0]
+    for i in range(1, len(text)):
+        if text[i] != text[i - 1]:
+            rezultat += text[i]
+    return rezultat
 
 
 

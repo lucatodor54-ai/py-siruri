@@ -29,17 +29,10 @@ from siruri2 import (
   analiza_cheltuieli,
   analiza_vanzari1,
   analiza_produs,
-  analiza_prod
+  analiza_prod,
+  fara_dubluri
 )
 if __name__ == "__main__":
-  produse = [
-    ("Laptop", 4500, 2),
-    ("Telefon", 2800, 3),
-    ("Monitor", 1200, 4),
-    ("Tastatura", 500, 5)
-  ]
-
-  rezultat = analiza_prod(produse)
-  print(rezultat)
+  print(fara_dubluri("aabbccdd"))
 
 
