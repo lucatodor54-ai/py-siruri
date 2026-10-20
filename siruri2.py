@@ -259,6 +259,22 @@ def analiza_tranzactii(tranzactii):
         media = 0
     return suma, contor, suma_mari, media
 
+salarii = [3200, 4500, 2800, 6000, 5100, 3500, 7200, 4100]
+def analiza_salarii(salarii):
+    contor = 0
+    suma_mari = 0
+    maxim = salarii[0]
+    minim = salarii[0]
+    for salar in salarii:
+        if salar >= 4500:
+            contor += 1
+            suma_mari += salar
+        if salar > maxim:
+            maxim = salar
+        if salar < minim:
+            minim = salar
+    return maxim, minim, contor, suma_mari
+
 
 
 

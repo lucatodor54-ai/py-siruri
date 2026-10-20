@@ -22,9 +22,12 @@ from siruri2 import (
   parola_buna,
   email_valid,
   cod_acces_valid,
-  analiza_tranzactii
+  analiza_tranzactii,
+  analiza_salarii
 )
 if __name__ == "__main__":
-    print(analiza_tranzactii([1500, 2000, 120, 3000]))
+  salarii = [3200, 4500, 2800, 6000, 5100, 3500, 7200, 4100]
+  rezultat = analiza_salarii(salarii)
+  print(rezultat)
 
 
