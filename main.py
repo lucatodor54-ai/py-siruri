@@ -31,9 +31,11 @@ from siruri2 import (
   analiza_produs,
   analiza_prod,
   fara_dubluri,
-  fara_cifre_dublate
+  fara_cifre_dublate,
+  numara_grupuri,
+  cea_mai_lunga_serie
 )
 if __name__ == "__main__":
-  print(fara_dubluri("1234444444"))
+  print(cea_mai_lunga_serie("1234444444"))
 
 

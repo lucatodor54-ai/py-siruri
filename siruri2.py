@@ -431,6 +431,21 @@ def numara_grupuri(text:str)->int:
             contor += 1
     return contor
 
+def cea_mai_lunga_serie(text:str)->int:
+    if text == "":
+        return 0
+    contor = 1
+    maxim = 1
+    for i in range(1, len(text)):
+        if text[i] == text[i-1]:
+            contor += 1
+        else:
+            contor = 1
+        if contor > maxim:
+            maxim = contor
+    return maxim
+
+
 
 
 
