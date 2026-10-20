@@ -413,6 +413,24 @@ def fara_dubluri(text: str) -> str:
             rezultat += text[i]
     return rezultat
 
+def fara_cifre_dublate(text: str) -> str:
+    if text =="":
+        return ""
+    rezultat = text[0]
+    for i in range(1, len(text)):
+        if text[i] != text[i-1]:
+            rezultat += text[i]
+    return rezultat
+
+def numara_grupuri(text:str)->int:
+    if text == "":
+        return 0
+    contor = 1
+    for i in range(1, len(text)):
+        if text[i] != text[i-1]:
+            contor += 1
+    return contor
+
 
 
 

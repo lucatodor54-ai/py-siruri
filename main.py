@@ -30,9 +30,10 @@ from siruri2 import (
   analiza_vanzari1,
   analiza_produs,
   analiza_prod,
-  fara_dubluri
+  fara_dubluri,
+  fara_cifre_dublate
 )
 if __name__ == "__main__":
-  print(fara_dubluri("aabbccdd"))
+  print(fara_dubluri("1234444444"))
 
 
