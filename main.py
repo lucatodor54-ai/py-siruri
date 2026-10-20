@@ -19,9 +19,10 @@ from siruri2 import (
   formatare_nume,
   litera_din_mijloc,
   suma_din_text,
-  parola_buna
+  parola_buna,
+  email_valid
 )
 if __name__ == "__main__":
-    print(parola_buna("Python2026"))
+    print(email_valid("luca.todor1@gmail.com"))
 
 
