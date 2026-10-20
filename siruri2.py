@@ -242,6 +242,23 @@ def cod_acces_valid(cod: str)->bool:
     else:
         return False
 
+tranzactii = [450, 1200, 850, 2300, 1750, 600, 3100, 950, 2800]
+def analiza_tranzactii(tranzactii):
+    suma = 0
+    contor = 0
+    suma_mari = 0
+
+    for tranzactie in tranzactii:
+        suma += tranzactie
+        if tranzactie >= 1500:
+            contor += 1
+            suma_mari += tranzactie
+    if contor != 0:
+        media = suma_mari / contor
+    else:
+        media = 0
+    return suma, contor, suma_mari, media
+
 
 
 

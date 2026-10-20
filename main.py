@@ -21,9 +21,10 @@ from siruri2 import (
   suma_din_text,
   parola_buna,
   email_valid,
-  cod_acces_valid
+  cod_acces_valid,
+  analiza_tranzactii
 )
 if __name__ == "__main__":
-    print(cod_acces_valid(""))
+    print(analiza_tranzactii([1500, 2000, 120, 3000]))
 
 
