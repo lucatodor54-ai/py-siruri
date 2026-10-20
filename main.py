@@ -33,7 +33,8 @@ from siruri2 import (
   fara_dubluri,
   fara_cifre_dublate,
   numara_grupuri,
-  cea_mai_lunga_serie
+  cea_mai_lunga_serie,
+  cea_mai_lunga_serie_pare
 )
 if __name__ == "__main__":
   print(cea_mai_lunga_serie("1234444444"))
