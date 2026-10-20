@@ -24,19 +24,22 @@ from siruri2 import (
   cod_acces_valid,
   analiza_tranzactii,
   analiza_salarii,
-  analiza_vanzari
+  analiza_vanzari,
+  analiza_note
 )
 if __name__ == "__main__":
-  vanzari = {
-    "Laptop": 4500,
-    "Telefon": 2800,
-    "Tableta": 1500,
-    "Monitor": 900,
-    "Casti": 600,
-    "Tastatura": 1200
+  note = {
+    "Andrei": 7,
+    "Maria": 10,
+    "Alex": 6,
+    "Ioana": 9,
+    "Mihai": 8,
+    "Elena": 5,
+    "David": 9,
+    "Sandra": 10
   }
 
-  rezultat = analiza_vanzari(vanzari)
+  rezultat = analiza_note(note)
   print(rezultat)
 
 

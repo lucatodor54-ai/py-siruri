@@ -300,6 +300,32 @@ def analiza_vanzari(vanzari):
     media = round(media, 2)
     return produs_maxim, contor, suma_mari, media
 
+note = {
+    "Andrei": 7,
+    "Maria": 10,
+    "Alex": 6,
+    "Ioana": 9,
+    "Mihai": 8,
+    "Elena": 5,
+    "David": 9,
+    "Sandra": 10
+}
+def analiza_note(note):
+    contor = 0
+    suma = 0
+    cea_mai_mica = list(note.values())[0]
+    student_minim = ""
+    for student, nota in note.items():
+        suma += nota
+        if nota >= 8:
+            contor += 1
+        if nota < cea_mai_mica:
+            cea_mai_mica = nota
+            student_minim = student
+    media = suma / len(note)
+    media = round(media, 2)
+    return student_minim,cea_mai_mica, contor, media
+
 
 
 
