@@ -326,6 +326,32 @@ def analiza_note(note):
     media = round(media, 2)
     return student_minim,cea_mai_mica, contor, media
 
+cheltuieli = {
+    "Mancare": 1850,
+    "Transport": 650,
+    "Haine": 1200,
+    "Facturi": 950,
+    "Divertisment": 500,
+    "Facultate": 1400
+}
+def analiza_cheltuieli(cheltuieli):
+    contor = 0
+    suma = 0
+    suma_mari = 0
+    cea_mai_mare = list(cheltuieli.values())[0]
+    categoria_maxima = list(cheltuieli.keys())[0]
+    for categorie, valoare in cheltuieli.items():
+        suma += valoare
+        if valoare >= 1000:
+            contor +=1
+            suma_mari += valoare
+        if valoare > cea_mai_mare:
+            cea_mai_mare = valoare
+            categoria_maxima = categorie
+    media = suma / len(cheltuieli)
+    media = round(media, 2)
+    return categoria_maxima, cea_mai_mare, contor, suma_mari, media
+
 
 
 

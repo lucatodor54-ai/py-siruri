@@ -25,21 +25,20 @@ from siruri2 import (
   analiza_tranzactii,
   analiza_salarii,
   analiza_vanzari,
-  analiza_note
+  analiza_note,
+  analiza_cheltuieli
 )
 if __name__ == "__main__":
-  note = {
-    "Andrei": 7,
-    "Maria": 10,
-    "Alex": 6,
-    "Ioana": 9,
-    "Mihai": 8,
-    "Elena": 5,
-    "David": 9,
-    "Sandra": 10
+  cheltuieli = {
+    "Mancare": 1850,
+    "Transport": 650,
+    "Haine": 1200,
+    "Facturi": 950,
+    "Divertisment": 500,
+    "Facultate": 1400
   }
 
-  rezultat = analiza_note(note)
+  rezultat = analiza_cheltuieli(cheltuieli)
   print(rezultat)
 
 
