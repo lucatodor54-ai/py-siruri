@@ -459,6 +459,22 @@ def cea_mai_lunga_serie_pare(text: str) -> int:
             maxim = contor
     return maxim
 
+def cea_mai_lunga_serie_litera(text: str) -> tuple:
+    if text == "":
+        return "", 0
+    contor = 1
+    maxim = 1
+    litera_max = text[0]
+    for i in range(1, len(text)):
+        if text[i] == text[i-1]:
+            contor += 1
+        else:
+            contor = 1
+        if contor > maxim:
+            maxim = contor
+            litera_max = text[i]
+    return litera_max, maxim
+
 
 
 
