@@ -475,6 +475,28 @@ def cea_mai_lunga_serie_litera(text: str) -> tuple:
             litera_max = text[i]
     return litera_max, maxim
 
+salarii = [2800, 4500, 3200, 6000, 7500, 3900]
+salarii_mari = [salar for salar in salarii if salar >= 4500]
+
+preturi = [100, 200, 350, 500]
+preturi_duble = [pret * 2 for pret  in preturi]
+
+numere = [2, 4, 6, 8, 10]
+numere_la_patrat = [numar ** 2 for numar in numere]
+
+numere = [1, 2, 3, 4, 5, 6, 7, 8]
+numere_pare = [numar for numar in numere if numar % 2 == 0]
+
+numere = [1, 2, 3, 4, 5, 6, 7, 8]
+numere_par_la_patrat = [numar ** 2 for numar in numere if numar % 2 ==0]
+
+def este_anagrama(a: str, b: str)->bool:
+    a = a.lower().replace(" ", "")
+    b = b.lower().replace(" ", "")
+    return sorted(a) == sorted(b)
+
+
+
 
 
 

@@ -35,9 +35,10 @@ from siruri2 import (
   numara_grupuri,
   cea_mai_lunga_serie,
   cea_mai_lunga_serie_pare,
-  cea_mai_lunga_serie_litera
+  cea_mai_lunga_serie_litera,
+  este_anagrama
 )
 if __name__ == "__main__":
-  print(cea_mai_lunga_serie_litera("aaabccccdd"))
+  print(este_anagrama("roma", "amor"))
 
 
