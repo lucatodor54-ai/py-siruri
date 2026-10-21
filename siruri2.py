@@ -495,6 +495,15 @@ def este_anagrama(a: str, b: str)->bool:
     b = b.lower().replace(" ", "")
     return sorted(a) == sorted(b)
 
+def aceleasi_vocale(a: str, b: str)->bool:
+    a = a.lower().replace(" ", "")
+    b = b.lower().replace(" ", "")
+    for vocala in "aeiou":
+        if a.count(vocala) != b.count(vocala):
+            return False
+    return True
+
+
 
 
 

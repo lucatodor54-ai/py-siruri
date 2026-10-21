@@ -36,9 +36,10 @@ from siruri2 import (
   cea_mai_lunga_serie,
   cea_mai_lunga_serie_pare,
   cea_mai_lunga_serie_litera,
-  este_anagrama
+  este_anagrama,
+  aceleasi_vocale
 )
 if __name__ == "__main__":
-  print(este_anagrama("roma", "amor"))
+  print(aceleasi_vocale("ana", "naa"))
 
 
