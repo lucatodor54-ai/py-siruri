@@ -1,8 +1,9 @@
 from siruri2 import (
     ascunde_cardul,
-    prezentare
+    prezentare,
+    cel_mai_mare_numar
 )
 if __name__ == "__main__":
-    print(prezentare("luca", 15))
+    print(cel_mai_mare_numar("-3,-5,-8"))
 
 

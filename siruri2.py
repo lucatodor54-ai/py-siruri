@@ -147,7 +147,8 @@ def suma_numerelor_pare(text: str) -> int:
 def cel_mai_mare_numar(text: str) -> int:
     if text == "":
         return 0
-    maxim = 0
+    bucati = text.split(",")
+    maxim = int(bucati[0])
     for bucata in text.split(","):
         bucata = int(bucata)
         if bucata > maxim:
