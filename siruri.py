@@ -67,7 +67,7 @@ def cuvantul_cel_mai_lung(text: str) -> str:
 
 
 def este_palindrom(text: str) -> bool:
-    return text[::-1] == text
+    return text[::-1].lower().replace(" ", "") == text.lower().replace(" ", "")
 
 
 def suma_cifrelor(n: int) -> int:

@@ -1,7 +1,8 @@
 from siruri import (
-    initiale
+    initiale,
+    este_palindrom
 )
 if __name__ == "__main__":
-    print(initiale("ana maria pop"))
+    print(este_palindrom("Ele fac cafele"))
 
 
