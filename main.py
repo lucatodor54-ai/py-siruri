@@ -1,45 +1,7 @@
-from siruri2 import (
-  prezentare,
-  ascunde_cardul,
-  cuvinte_care_incep_cu,
-  numar_telefon,
-  ascunde_codul,
-  ascunde_mijlocul,
-  ascunde_username,
-  sterge_marginile,
-  sterge_marginile2,
-  cuvinte_care_se_termina_cu,
-  cuvinte_cu_litera,
-  numara_cuvinte_lungi,
-  cel_mai_lung_cuvant,
-  cel_mai_scurt_cuvant,
-  cel_mai_lung_cuvant_cu_litera,
-  numar_total_litere,
-  numar_total_litere_cuvinte_lungi,
-  formatare_nume,
-  litera_din_mijloc,
-  suma_din_text,
-  parola_buna,
-  email_valid,
-  cod_acces_valid,
-  analiza_tranzactii,
-  analiza_salarii,
-  analiza_vanzari,
-  analiza_note,
-  analiza_cheltuieli,
-  analiza_vanzari1,
-  analiza_produs,
-  analiza_prod,
-  fara_dubluri,
-  fara_cifre_dublate,
-  numara_grupuri,
-  cea_mai_lunga_serie,
-  cea_mai_lunga_serie_pare,
-  cea_mai_lunga_serie_litera,
-  este_anagrama,
-  aceleasi_vocale
+from siruri import (
+    initiale
 )
 if __name__ == "__main__":
-  print(aceleasi_vocale("ana", "naa"))
+    print(initiale("ana maria pop"))
 
 

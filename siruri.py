@@ -1,7 +1,7 @@
 
 
 def prima_litera(text: str) -> str:
-    return text[::-1]
+    return text[0]
 
 
 def ultima_litera(text: str) -> str:
@@ -45,7 +45,7 @@ def initiale(nume_complet: str) -> str:
     cuvinte = nume_complet.split()
     rezultat = ""
     for cuvant in cuvinte:
-        rezultat += cuvant[0]
+        rezultat += cuvant[0].upper()
     return rezultat
 ## Ana ar avea mere multe  =>["Ana" ,"ar" ,"avea","mere","multe"]
 
