@@ -52,13 +52,6 @@ def numara_cuvinte_lungi(text: str, lungime: int) -> int:
             contor += 1
     return contor
 
-def cel_mai_lung_cuvant(text:str)-> str:
-    cel_mai_lung = ""
-    for cuvant in text.split():
-        if len(cuvant) > len(cel_mai_lung):
-            cel_mai_lung = cuvant
-    return cel_mai_lung
-
 def cel_mai_scurt_cuvant(text:str)-> str:
     cuvinte =  text.split()
     cel_mai_scurt = cuvinte[0]
@@ -413,15 +406,6 @@ def fara_dubluri(text: str) -> str:
             rezultat += text[i]
     return rezultat
 
-def fara_cifre_dublate(text: str) -> str:
-    if text =="":
-        return ""
-    rezultat = text[0]
-    for i in range(1, len(text)):
-        if text[i] != text[i-1]:
-            rezultat += text[i]
-    return rezultat
-
 def numara_grupuri(text:str)->int:
     if text == "":
         return 0
@@ -502,20 +486,3 @@ def aceleasi_vocale(a: str, b: str)->bool:
         if a.count(vocala) != b.count(vocala):
             return False
     return True
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
