@@ -267,7 +267,7 @@ def analiza_salarii(salarii):
             minim = salar
     return maxim, minim, contor, suma_mari
 
-vanzari = {
+vanzare = {
     "Laptop": 4500,
     "Telefon": 2800,
     "Tableta": 1500,
@@ -276,12 +276,12 @@ vanzari = {
     "Tastatura": 1200
 }
 
-def analiza_vanzari(vanzari):
+def analiza_vanzari(vanzare):
     contor = 0
     suma_mari = 0
     maxim = 0
     produs_maxim = ""
-    for produs, valoare in vanzari.items():
+    for produs, valoare in vanzare.items():
         if valoare >= 1500:
             contor += 1
             suma_mari += valoare
@@ -465,11 +465,11 @@ salarii_mari = [salar for salar in salarii if salar >= 4500]
 preturi = [100, 200, 350, 500]
 preturi_duble = [pret * 2 for pret  in preturi]
 
-numere = [2, 4, 6, 8, 10]
-numere_la_patrat = [numar ** 2 for numar in numere]
+numarul = [2, 4, 6, 8, 10]
+numere_la_patrat = [numar ** 2 for numar in numarul]
 
-numere = [1, 2, 3, 4, 5, 6, 7, 8]
-numere_pare = [numar for numar in numere if numar % 2 == 0]
+numerele = [1, 2, 3, 4, 5, 6, 7, 8]
+numere_pare = [numar for numar in numerele if numerele % 2 == 0]
 
 numere = [1, 2, 3, 4, 5, 6, 7, 8]
 numere_par_la_patrat = [numar ** 2 for numar in numere if numar % 2 ==0]
