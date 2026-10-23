@@ -98,3 +98,14 @@ def cel_mai_ieftin (produse: str)->str:
            pret_minim=pret
            nume_produs_minim=produs[0]
     return nume_produs_minim
+
+def caractere_diferite(text: str)->int:
+    text = text.lower()
+    diferite = []
+    for caracter in text:
+        if caracter not in diferite:
+            diferite.append(caracter)
+    return len(diferite)
+
+
+
