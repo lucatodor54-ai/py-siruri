@@ -316,7 +316,7 @@ def analiza_note(note):
     contor = 0
     suma = 0
     cea_mai_mica = list(note.values())[0]
-    student_minim = ""
+    student_minim = list(note.keys())[0]
     for student, nota in note.items():
         suma += nota
         if nota >= 8:
