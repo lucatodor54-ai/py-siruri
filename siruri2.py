@@ -200,20 +200,17 @@ def username_valid(username: str) -> bool:
 def email_valid(email:str)->bool:
     if len(email)<8:
         return False
-    are_cifra = False
     are_arond = False
     are_punct = False
 
     for litera in email:
-        if litera in "0123456789":
-            are_cifra = True
         if litera in "@":
             are_arond = True
         if litera in ".":
             are_punct = True
 
 
-    if are_cifra == True and are_punct == True and are_arond == True and " " not in email:
+    if are_punct == True and are_arond == True and " " not in email:
         return True
     else:
         return False

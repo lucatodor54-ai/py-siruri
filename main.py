@@ -3,17 +3,11 @@ from siruri2 import (
     prezentare,
     cel_mai_mare_numar,
     analiza_note,
-    analiza_vanzari
+    analiza_vanzari,
+    email_valid
 )
 if __name__ == "__main__":
-  vanzari = {
-    "Laptop": 45,
-    "Telefon": 2344,
-    "Tableta": 1,
-    "Monitor": 900,
-    "Casti": 600,
-    "Tastatura": 32424
-  }
-  print(analiza_vanzari(vanzari))
+
+  print(email_valid("luca.todor@gmail.com"))
 
 
