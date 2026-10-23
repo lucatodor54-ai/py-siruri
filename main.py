@@ -1,8 +1,7 @@
-from siruri import (
-    initiale,
-    este_palindrom
+from siruri2 import (
+    ascunde_cardul
 )
 if __name__ == "__main__":
-    print(este_palindrom("Ele fac cafele"))
+    print(ascunde_cardul("1234567812345678"))
 
 

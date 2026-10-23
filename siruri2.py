@@ -4,7 +4,7 @@ def prezentare(nume: str, varsta: int) -> str:
     return f"{nume} are {varsta}"
 
 def ascunde_cardul(numar_card: str) -> str:
-    return "*" * (len(numar_card)-4) + numar_card[:-4]
+    return "*" * (len(numar_card)-4) + numar_card[-4:]
 
 def cuvinte_care_incep_cu(text: str, litera: str) -> int:
     contor = 0
