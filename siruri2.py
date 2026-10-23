@@ -295,11 +295,13 @@ def analiza_vanzari(vanzari):
         if valoare >= 1500:
             contor += 1
             suma_mari += valoare
+        if contor != 0:
+            media = round(suma_mari / contor , 2)
+        else:
+            media = 0
         if valoare > maxim:
             maxim = valoare
             produs_maxim = produs
-    media = suma_mari / contor
-    media = round(media, 2)
     return produs_maxim, contor, suma_mari, media
 
 note = {
