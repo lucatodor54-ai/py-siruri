@@ -1,7 +1,7 @@
 
 def prezentare(nume: str, varsta: int) -> str:
     nume=nume[0].upper()+nume[1:].lower()
-    return f"{nume} are {varsta}"
+    return f"{nume} are {varsta} ani"
 
 def ascunde_cardul(numar_card: str) -> str:
     return "*" * (len(numar_card)-4) + numar_card[-4:]
