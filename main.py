@@ -1,8 +1,9 @@
 from siruri3 import (
-    caractere_diferite
+    caractere_diferite,
+    numara_aparitii
 )
 if __name__ == "__main__":
 
-  print(caractere_diferite("banana"))
+  print(numara_aparitii("banana", "ana"))
 
 

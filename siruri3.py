@@ -107,5 +107,15 @@ def caractere_diferite(text: str)->int:
             diferite.append(caracter)
     return len(diferite)
 
+def numara_aparitii(text:str, bucata: str)->int:
+    contor = 0
+    for i in range(len(text)-len(bucata)+1):
+        if text[i:i + len(bucata)] == bucata:
+            contor += 1
+    return contor
+
+
+
+
 
 
