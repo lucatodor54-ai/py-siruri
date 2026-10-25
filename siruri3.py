@@ -114,6 +114,21 @@ def numara_aparitii(text:str, bucata: str)->int:
             contor += 1
     return contor
 
+def suma_numerelor_din_text(text:str)->int:
+    suma = 0
+    numar = ""
+    for caracter in text:
+        if caracter in "0123456789":
+            numar += caracter
+        else:
+            if numar != "":
+                suma+=int(numar)
+                numar = ""
+    if numar != "":
+        suma += int(numar)
+    return suma
+
+
 
 
 
