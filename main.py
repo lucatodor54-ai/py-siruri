@@ -1,9 +1,8 @@
 from siruri3 import (
-    caractere_diferite,
-    numara_aparitii
+    curata_date
 )
 if __name__ == "__main__":
-
-  print(numara_aparitii("banana", "ana"))
+    valori = ["1200", "2500", "abc", "3100", "eroare", "4500"]
+print(curata_date(valori))
 
 

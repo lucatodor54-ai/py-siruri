@@ -1,3 +1,6 @@
+from codecs import ignore_errors
+
+
 def utilizator_din_email(email: str) -> str:
     pozitie = email.find("@")
     if pozitie == -1:
@@ -127,10 +130,3 @@ def suma_numerelor_din_text(text:str)->int:
     if numar != "":
         suma += int(numar)
     return suma
-
-
-
-
-
-
-
